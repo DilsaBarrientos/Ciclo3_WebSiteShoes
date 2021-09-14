@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- preguntas que tengo para el tutor a que tengo
+        
+        
+        1_en la etiqueta action y method que deberia ir
+
+        2_en el botom de contraseña nos dicen que los id 
+        no deben ir con ñ entonces, por que letra lo reemplazo
+
+        3_dudas en label con radio(a que id le pongo el label de genero)
+
+        4_que pongo de tipos de datos de los imput type ? number en vez tel o pongo text
+    -->
+
+
+
+    <h1>Registro</h1>
+
+    <form action="prueba.php" method="POST" id="form-registro">
+
+            
+        <label for="nombre">Nombre:</label><br>
+
+            <input type="text" name="nombre" id="nombre"><br> 
+        
+        <label for="hombre">Genero:</label><br>
+            
+            <input type="radio"name="genero" value="1" id="hombre"><label for="hombre">M</label>
+
+            <input type="radio" name="genero" value="2" id="mujer"><label for="mujer">F</label><br>
+            
+            
+
+        <label for="telefono">Telefono:</label><br>
+
+            <input type="tel" name="telefono" id="telefono"><br>
+
+
+
+        <label for="dirrecion">Dirección :</label><br>
+
+            <input type="text" name="dirrecion" id="dirreccion"><br>
+
+
+        <label for="correo">Correo:</label><br>
+
+            <input type="email" name="correo" id="correo"><br>
+
+
+
+
+        <label for="nombre">Contraseña:</label><br>
+        
+            <input type="password" name="contrasena" id="contrasena"><br>
+
+
+        <br><br>
+
+        
+
+        <input type="submit"  id="btn-submit-form" value="Registrar">
+        
+
+    </form>
+
+
+    
+</body>
+</html>
