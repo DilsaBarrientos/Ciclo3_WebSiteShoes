@@ -1,66 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A Tus Pies</title>
-    <link rel="stylesheet" href="estilos.css">
-    <style>
-        p {font-size: 15px; color: rgb(22, 108, 134)}
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <img src="img/version 3.png" width="200" height="150">
-        </div>
-        <nav id="nav-menu" class="site-nav">
-            <ul>
-                <li><a href="#"><i class="fa fa-home site-nav--icon"></i>Registrarse</a></li>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
 
-            </ul>
-        </nav>
-        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
-            <div class="hamburger"></div>
+  <body>
+    <header class="header">
+      <nav class="nav" id="nav-menu">
+        <div>
+          <img class="img-logo" src="img/version 3.png"  alt="logo" />
         </div>
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <button type="button"id="“btn-registrar"><a id="enlace-registro" target="__blank" href="registro.html">Registro</a></button>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <div class="respmenu">
-    <nav-bar >
-    <aside>
-        
-    </aside> 
-        "No importa cuál sea tu huella, nosotros te acompañamos durante el camino"
-
-    <nav id="nav menu">
-        <ul>
-            <button id="btn-registrar" type="button">
-                <a id="enlace-registro" href="registro.html">Registrarse</a></li>
-
-            </button>
-        </ul>
-    </nav>
-
-    </nav-bar>
-
-    </div>
-</body>
-
-<style>
-    body {
-    font-family: sans-serif;
-    }
-
-    .respmenu a {
-    color: inherit;
-    text-decoration: none;
-    display: block;
-    padding: 10px 20px;
-    border-bottom: 2px solid #151718;
-    max-width: 200px;
-    background: rgb(228, 163, 217);
-    font-variant: small-caps;
-    text-shadow: 1px 1px black;
-    }
-</style>
+    <p>
+      "No importa cuál sea tu huella, nosotros te acompañamos durante el camino"
+    </p>
+  </body>
 </html>
