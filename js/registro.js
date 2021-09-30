@@ -1,4 +1,5 @@
-var db = [];
+let registros = [];
+
 function agregarRegistro(){
     var nombre = document.getElementById('nombre').value;
     var genero = document.getElementById('genero').value;
@@ -15,9 +16,10 @@ function agregarRegistro(){
         this.contrasena = contrasena;
     }
     var registro_usuario = new Registro(nombre,genero,telefono,direccion,correo,contrasena);
-    db.push(registro_usuario);
-    console.log(db);
+    registros.push(registro_usuario);
+    console.log(registros);
 }
-module.exports = {agregarRegistro};
+module.exports.registros = registros;
+module.exports.agregarRegistro = agregarRegistro;
 
 
