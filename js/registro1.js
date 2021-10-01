@@ -19,23 +19,7 @@ function agregarRegistro(){
     registros.push(registro_usuario);
     console.log(registros);
 }
-
-function filtrarCorreo(arreglo){
-    let arregloFiltrado=[];
-    let filtrar=/@gmail.com/
-    for (x=0;x<arreglo.length;x++) {
-        if(filtrar.test(arreglo[x].correo)){
-            arregloFiltrado.push(arreglo[x].correo);
-        }
-            
-            
-        }
-    console.log(arregloFiltrado);
-    return arregloFiltrado;}
-    module.exports.registros = registros;
-    module.exports.agregarRegistro = agregarRegistro;
-    module.exports.filtrarCorreo=filtrarCorreo;
-
-
+module.exports.registros = registros;
+module.exports.agregarRegistro = agregarRegistro;
 
 
