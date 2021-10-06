@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form action=""  id="form-registro" onsubmit="validarFormulario()">
+    <form action=""  id="form-registro" >
         <div class="form">
             <h1>Registro</h1>
             <div class="grupo">
@@ -39,9 +39,9 @@
                 <label for="">Contraseña</label>
             </div>
 
-            <input type="submit"  id="btn-submit-form" value="Registrar">
+            <input type="button"  id="btn-submit-form" onclick="agregarRegistro()" value="Registrar">
         </div>
     </form>
 </body>
-<script src="js/form.js"></script>
+<script src="js/registro.js"></script>
 </html>
