@@ -3,7 +3,7 @@
 ::after {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing:content-box;
 }
 
 /*  Google Fonts  */
@@ -66,6 +66,7 @@ body {
   font-weight: var(--font-bold-semi);
 }
 button {
+  margin: 20px;/*modi luis*/
   border: none;
 }
 /* === Estilos del Menu === */
@@ -93,6 +94,7 @@ a:hover {
   position: absolute;
   top: 38px;
   right: 90px;
+  
 }
 
 #menuToggle input {
@@ -104,6 +106,7 @@ a:hover {
   cursor: pointer;
   opacity: 0;
   z-index: 2;
+  
 }
 
 #menuToggle span {
@@ -117,6 +120,8 @@ a:hover {
   transform-origin: 4px 0px;
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  
+    
 }
 #menuToggle input:checked ~ span {
   transform: rotate(45deg) translate(-2px, -1px);
@@ -136,13 +141,19 @@ a:hover {
 
 #menu {
   position: absolute;
-  width: 300px;
+  width: 300px;/*lo cambie de 300*/
   right: -150px;
   padding: 50px;
-  padding-top: 125px;
+  padding-top: 50px;/*lo cambie de 125*/
   background-color: var(--background-first-color);
   transform: translate(100%, 0);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  border: 7px rgb(253, 182, 50) solid ;/*--*/
+  text-align: center;/*--*/
+  
+
+
+
 }
 
 #menuToggle input:checked ~ ul {
@@ -182,44 +193,52 @@ a:hover {
 /*
 * Styles Register
 */
-h1 {
+h1{
   text-align: center;
   font-weight: 700;
 }
 
-form {
+form{
   background: #fff;
   padding: 40px 0;
   box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
   border-radius: 10px;
-  font-family: "Roboto";
-  background: #4568dc;
+  font-family: 'Roboto';
+  background: #4568DC;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #b06ab3, #4568dc);
+  background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #b06ab3, #4568dc);
+  background: linear-gradient(to right, #B06AB3, #4568DC);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 750px;
+  height: 650px;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
-#form-registro {
-  overflow-y: auto;
-  overflow-x: auto;
+.form-registro{
   width: 50%;
   margin: auto;
-  margin-top: 50px;
-  margin-bottom: 10px;
 }
+/*para nada deje todo igual hice una gran contribuccion al css
+*/
+.form-login{
+  width: 50%;
+  margin: auto;
+}
+/* wua que gran cantidad de codigo me monte */
 
-form .grupo {
+
+
+
+
+form .grupo{
   position: relative;
-  margin: 45px;
+  margin: 45px ;
 }
 
-input {
+input{
   background: none;
   color: #c6c6c6;
   font-size: 18px;
@@ -230,12 +249,12 @@ input {
   border-bottom: 1px solid var(--colorTextos);
 }
 
-input:focus {
+input:focus{ 
   outline: none;
   color: #000000;
 }
 
-label {
+label{
   color: var(--colorTextos);
   font-size: 16px;
   position: absolute;
@@ -245,64 +264,60 @@ label {
   pointer-events: none;
 }
 
-input:focus ~ label,
-input:valid ~ label {
+input:focus~label,
+input:valid~label{
   top: -14px;
   font-size: 12px;
   color: #2196f3;
 }
 
-.barra {
+.barra{
   position: relative;
   display: block;
   width: 100%;
 }
 
-.barra::before {
+.barra::before{
   content: "";
   height: 2px;
   width: 0%;
   bottom: 0;
   position: absolute;
-  background: linear-gradient(to right, #b06ab3, #4568dc);
+  background: linear-gradient(to right, #B06AB3, #4568DC);
   transition: 0.3s ease width;
   left: 0;
 }
 
-input:focus ~ .barra::before {
+input:focus~.barra::before{
   width: 100%;
 }
 
-.content-input {
-  position: relative;
-  margin-bottom: 30px;
-  padding: 5px 0 5px 5px; /* Damos un padding de 60px para posicionar el elemento <i> en este espacio*/
-  display: block;
+.content-input{
+	position: relative;
+	margin-bottom: 30px;
+	padding:5px 0 5px 5px; /* Damos un padding de 60px para posicionar el elemento <i> en este espacio*/
+	display: block;
 }
 
 /* Estas reglas se aplicarán a todos las elementos i después de cualquier input*/
-.content-input input + i {
+.content-input input + i{
   background: #f0f0f0;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  position: absolute;
+  border:2px solid rgba(0,0,0,0.2);
+  position: absolute; 
   left: 0;
   top: 0;
 }
 
 /* Estas reglas se aplicarán a todos los i despues de un input de tipo radio*/
-.content-input input[type="radio"] + i {
+.content-input input[type=radio] + i{
   height: 30px;
   width: 30px;
   border-radius: 100%;
   left: 15px;
 }
 
-@media screen and (max-width: 500px) {
-  form {
-    width: 80%;
+@media screen and (max-width:500px){
+  form{
+      width: 80%;
   }
-}
-body {
-  overflow-y: visible;
-  overflow-x: hidden;
 }
